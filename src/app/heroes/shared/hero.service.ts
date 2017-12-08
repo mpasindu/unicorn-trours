@@ -12,7 +12,7 @@ import {TranslateService} from '@ngx-translate/core';
 export class HeroService {
   private headers: HttpHeaders;
   private heroesUrl: string;
-  private herros_new : JSON;
+  private herros_new;
   private translations: any;
 
   private handleError(error: any) {
@@ -48,9 +48,21 @@ export class HeroService {
   getHeroById(heroId: string): Observable<Hero> {
     return this.http.get(this.heroesUrl + '/' + heroId)
       .map(response => {
-        return response;
+      //  return response;
+
+        var jsonData = this.herros_new;
+   var counter = 0
+for (var i = 0; i < jsonData.length; i++) {
+     counter = i;
+    if (jsonData[i].id == heroId)
+    break;
+    
+}
+    return jsonData[counter]; 
+        
       })
-      .catch(error => this.handleError(error));
+   
+     .catch(error => this.handleError(error));
   }
 
   createHero(hero: any): Observable<Hero> {
