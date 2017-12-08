@@ -9,6 +9,10 @@ import {HeroListComponent, RemoveHeroDialogComponent} from './hero-list/hero-lis
 import {HeroService} from './shared/hero.service';
 import {HeroDetailComponent} from './hero-detail/hero-detail.component';
 import {HeroesComponent} from './heroes.component';
+// import {Angular2ImageGalleryModule } from 'angular2-image-gallery'
+// import { GalleryComponent } from './gallery/gallery.component';
+
+
 
 @NgModule({
   imports: [
@@ -16,13 +20,16 @@ import {HeroesComponent} from './heroes.component';
     FormsModule,
     SharedModule,
     HeroRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // Angular2ImageGalleryModule 
   ],
   declarations: [
     HeroesComponent,
     HeroListComponent,
     RemoveHeroDialogComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    // GalleryComponent
+    
   ],
   entryComponents: [
     RemoveHeroDialogComponent
@@ -34,3 +41,4 @@ import {HeroesComponent} from './heroes.component';
 
 export class HeroesModule {
 }
+

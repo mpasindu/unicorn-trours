@@ -7,6 +7,7 @@ export let APP_CONFIG = new InjectionToken('app.config');
 export const AppConfig: IAppConfig = {
   routes: {
     heroes: 'heroes',
+    all: 'all',
     error404: '404'
   },
   endpoints: {
@@ -20,29 +21,33 @@ export const AppConfig: IAppConfig = {
 {
 "id": 2,
 "name": "Wagon r",
-"alterEgo": "Uni wadda fas df  fas dfasdfasdf  fas asdfasd fsad dfa s \n fasdfas  fa",
+"alterEgo": "RS:55000/-",
+"description" : "\r\n\r\nHi, i have brand new wagon R for rent, \r\nReputed company exsucutive, managers personal use.\r\nFully loaded Fuel per litter = 17city limits Out station. = 20 per litter \r\nLong term basis minimum 1 month \r\nConditions apply",
 "likes": 213,
 "default": true
 },
 {
-"id": 1666,
-"name": "pasindu",
-"alterEgo": "pasindu",
-"likes": 0,
-"default": false
+"id": 4,
+"name": "Perodua axia",
+"alterEgo": "RS:55000/-",
+"likes": 981,
+"description" : "\r\n\r\nPerodua axia for rent, \r\nReputed company exsucutive, managers personal use.\r\nLong term basis minimum 1 month \r\nConditions apply",
+"default": true
 },
 {
 "id": 1,
 "name": "Alto 800",
-"alterEgo": "Uni batta",
+"alterEgo": "RS:35000/-",
 "likes": 1330,
+"description" : "\r\n\r\nAlto 800 for rent, \r\nReputed company exsucutive, managers personal use.\r\nLong term basis minimum 1 month \r\nConditions apply",
 "default": true
 },
 
 {
 "id": 3,
 "name": "wagon r j style 2015",
-"alterEgo": "Uni style",
+"alterEgo": "RS:55000/-",
+"description" : "\r\n\r\nWagon R j style for rent, \r\nReputed company exsucutive, managers personal use.\r\nFully loaded Fuel per litter = 17city limits Out station. = 20 per litter \r\nLong term basis minimum 1 month \r\nConditions apply",
 "likes": 222,
 "default": true
 }

@@ -3,6 +3,8 @@ import {Hero} from '../shared/hero.model';
 import {HeroService} from '../shared/hero.service';
 import {ActivatedRoute} from '@angular/router';
 
+
+
 @Component({
   selector: 'app-hero-detail',
   templateUrl: './hero-detail.component.html',
